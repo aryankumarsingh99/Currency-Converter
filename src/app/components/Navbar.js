@@ -8,9 +8,9 @@ export default function Navbar() {
   const pathname = usePathname();
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/converter", label: "Converter" },
-    { href: "/history", label: "History" },
-    { href: "/about", label: "About" },
+    // { href: "/converter", label: "Converter" },
+    // { href: "/history", label: "History" },
+    // { href: "/about", label: "About" },
   ];
 
   return (
@@ -30,19 +30,7 @@ export default function Navbar() {
             >
               <span className="block w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 via-cyan-200 to-purple-300"></span>
             </motion.span>
-            <motion.div
-              animate={{ rotate: [0, 8, -8, 0] }}
-              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-            >
-              <Image
-                src="/name-logo.svg"
-                alt="Logo"
-                width={44}
-                height={44}
-                className="relative z-10"
-                priority
-              />
-            </motion.div>
+            <span className="relative z-10 text-4xl drop-shadow-lg">💱</span>
           </span>
           <motion.span
             className="ml-3 font-extrabold text-blue-700 text-xl tracking-wide drop-shadow"
@@ -50,7 +38,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            SmartFX
+            Currency Converter
           </motion.span>
         </Link>
         <div className="flex gap-6 ml-auto">

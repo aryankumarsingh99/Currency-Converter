@@ -34,15 +34,6 @@ export default function Home() {
                 <span className="absolute -inset-2 blur-lg opacity-60">
                   <span className="block w-20 h-20 rounded-full bg-gradient-to-tr from-indigo-400 via-indigo-200 to-blue-400 animate-pulse"></span>
                 </span>
-                {/* Add a logo or leave empty if not needed */}
-                {/* <Image
-                src="/name-logo.svg"
-                alt="App Logo"
-                width={80}
-                height={80}
-                className="relative z-10 drop-shadow-lg"
-                priority
-              /> */}
               </motion.div>
               <motion.h1
                 className="text-4xl sm:text-5xl font-extrabold text-white text-center lg:text-left mb-2 drop-shadow"
@@ -76,22 +67,10 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.6 }}
             >
               <Link
-                href="/converter"
-                className="flex-1 bg-gradient-to-r from-indigo-600 to-blue-00 hover:from-indigo-700 hover:to-blue-600 text-white font-semibold py-3 rounded-lg text-center transition shadow"
+                href=""
+                className="flex-1 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-700 hover:to-blue-600 text-white font-semibold py-3 rounded-lg text-center transition shadow"
               >
                 Start Converting
-              </Link>
-              <Link
-                href="/history"
-                className="flex-1 bg-white border border-indigo-200 hover:bg-indigo-50 text-indigo-700 font-semibold py-3 rounded-lg text-center transition shadow"
-              >
-                View History
-              </Link>
-              <Link
-                href="/about"
-                className="flex-1 bg-white border border-indigo-200 hover:bg-indigo-50 text-indigo-700 font-semibold py-3 rounded-lg text-center transition shadow"
-              >
-                About
               </Link>
             </motion.div>
           </motion.div>

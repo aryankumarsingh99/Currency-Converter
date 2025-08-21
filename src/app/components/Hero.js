@@ -13,11 +13,11 @@ export default function Hero() {
       >
         <div className="mb-8">
           <Image
-            src="/currency-hero.png"
+            src="/currency.png"
             alt="Currency Exchange Illustration"
-            width={220}
+            width={320}
             height={120}
-            className="rounded-xl shadow-lg"
+            className="rounded-xl "
           />
         </div>
         <h2 className="text-4xl sm:text-5xl font-extrabold text-indigo-700 mb-4 drop-shadow">
